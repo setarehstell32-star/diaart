@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #faf6f0;
+  --gold: #c9a96e;
+  --soft-black: #1a1a1a;
+  --petrol-soft: #eaf0f2;
+  --petrol-medium: #d4dfe3;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #faf6f0;
+  color: #1a1a1a;
+  font-family: "Vazirmatn", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #faf6f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #c9a96e;
+  border-radius: 10px;
+}
+
+/* ---------- Utility ---------- */
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- Painting backgrounds ---------- */
+.art-starry-night {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.art-the-scream {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/The_Scream.jpg/800px-The_Scream.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.art-girl-pearl {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/800px-1665_Girl_with_a_Pearl_Earring.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+.art-mona-lisa {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg");
+  background-size: cover;
+  background-position: center top;
+}
+
+/* ---------- Petrol (آبی ملایم نفتی) ---------- */
+.bg-petrol-soft {
+  background-color: #eaf0f2;
+}
+.bg-petrol-medium {
+  background-color: #d4dfe3;
+}
+.text-petrol {
+  color: #3b5560;
+}
+.border-petrol {
+  border-color: #b9c9cf;
+}
+
+/* ---------- Overlays ---------- */
+.painting-overlay-light {
+  position: relative;
+}
+.painting-overlay-light::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 246, 240, 0.88) 0%,
+    rgba(250, 246, 240, 0.72) 50%,
+    rgba(250, 246, 240, 0.92) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+.painting-overlay-light > * {
+  position: relative;
+  z-index: 2;
+}
+
+.painting-overlay-dark {
+  position: relative;
+}
+.painting-overlay-dark::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 26, 0.45) 0%,
+    rgba(26, 26, 26, 0.55) 50%,
+    rgba(26, 26, 26, 0.65) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+.painting-overlay-dark > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- Gold frame ---------- */
+.gold-frame {
+  border: 1px solid #c9a96e;
+  border-radius: 16px;
+}
+
+/* ---------- Starry footer ---------- */
+.starry-footer {
+  position: relative;
+  overflow: hidden;
+}
+.starry-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  pointer-events: none;
+}

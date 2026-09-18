@@ -1,0 +1,10 @@
+[
+  { "id": "painting", "name": "نقاشی", "icon": "Palette", "paintingCrop": "mona-lisa" },
+  { "id": "pottery", "name": "سفال", "icon": "Amphora", "paintingCrop": "girl-pearl" },
+  { "id": "sculpture", "name": "مجسمه‌سازی", "icon": "Shapes", "paintingCrop": "the-scream" },
+  { "id": "accessories", "name": "اکسسوری", "icon": "Gem", "paintingCrop": "starry-night" },
+  { "id": "jewelry", "name": "جواهرات", "icon": "Sparkles", "paintingCrop": "girl-pearl" },
+  { "id": "textile", "name": "بافت و نساجی", "icon": "Shirt", "paintingCrop": "starry-night" },
+  { "id": "woodwork", "name": "چوب‌کاری", "icon": "TreeDeciduous", "paintingCrop": "mona-lisa" },
+  { "id": "glasswork", "name": "شیشه‌گری", "icon": "Diamond", "paintingCrop": "the-scream" }
+]
